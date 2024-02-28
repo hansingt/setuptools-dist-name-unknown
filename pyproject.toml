@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test"
+version = "0.1.0"
+dependencies = ["setuptools"]
+
+[project.entry-points."setuptools.finalize_distribution_options"]
+finalize_options = "finalize_options:finalize_options"
+
